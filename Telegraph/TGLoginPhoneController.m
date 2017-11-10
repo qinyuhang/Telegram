@@ -445,6 +445,9 @@
         } else if (screenSize.height < 569.0) {
             titleAdditionalOffset = -15.0f;
             fieldsAdditionalOffset = 22.0f;
+        } else if (screenSize.height < 850.0) {
+            titleAdditionalOffset = 20.0f;
+            fieldsAdditionalOffset = 26.0f;
         }
     }
     
