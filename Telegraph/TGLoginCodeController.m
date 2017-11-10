@@ -585,6 +585,23 @@
             }
             didNotReceiveCodeOffset = 388.0f;
             timeoutOffset = 388.0f;
+        } else if (screenSize.height < 850.0f){
+            // iPhone X
+            if (_otherDeviceView != nil) {
+                otherDeviceOffset = 64.0f + 30.0f;
+                titleLabelOffset = 94.0f + 48.0f + 30.0f;
+                noticeLabelOffset = 155.0f + 40.0f + 30.0f;
+                topOffset = 270.0f + 40.0f + 30.0f;
+            } else {
+                titleLabelOffset = 84.0f;
+                noticeLabelOffset = 155.0f;
+                topOffset = 270.0f;
+            }
+            if (_noticeLabel.frame.size.height < 35.0f) {
+                topOffset -= 8.0f;
+            }
+            didNotReceiveCodeOffset = 460.0f;
+            timeoutOffset = 460.0f;
         } else {
             if (_otherDeviceView != nil) {
                 otherDeviceOffset = 64.0f;
